@@ -3,11 +3,11 @@ from resources.lib import mainaddon
 
 plugin = Plugin()
 
-URL1 = "https://feeds.soundcloud.com/users/soundcloud:users:276623469/sounds.rss" #SPOKENEDITION
-URL2 = "https://feeds.megaphone.fm/theatlanticsdailyidea" #ATLANTICSDAILYIDEA
-URL3 = "https://feeds.megaphone.fm/radioatlantic" #RADIOATLANTIC
-URL4 = "https://feeds.megaphone.fm/theinterview" #THEATLANTICINTERVIEW
-URL5 = "https://feeds.megaphone.fm/crazygenius" #CRAZYGENIUS
+#URL1 = "https://feeds.soundcloud.com/users/soundcloud:users:276623469/sounds.rss" #SPOKENEDITION
+#URL2 = "https://feeds.megaphone.fm/theatlanticsdailyidea" #ATLANTICSDAILYIDEA
+#URL3 = "https://feeds.megaphone.fm/radioatlantic" #RADIOATLANTIC
+#URL4 = "https://feeds.megaphone.fm/theinterview" #THEATLANTICINTERVIEW
+#URL5 = "https://feeds.megaphone.fm/crazygenius" #CRAZYGENIUS
 
 @plugin.route('/')
 def main_menu():
@@ -36,35 +36,35 @@ def main_menu():
     return items
 
 @plugin.route('/spoken_episodes/')
-def all_episodes1():
+def spoken_episodes():
     soup1 = mainaddon.get_soup1(URL1)
     playable_podcast1 = mainaddon.get_playable_podcast1(soup1)
     items = mainaddon.compile_playable_podcast1(playable_podcast1)
     return items
 
 @plugin.route('/daily_episodes/')
-def all_episodes2():
+def daily_episodes():
     soup2 = mainaddon.get_soup2(URL2)
     playable_podcast2 = mainaddon.get_playable_podcast2(soup2)
     items = mainaddon.compile_playable_podcast2(playable_podcast2)
     return items
 
 @plugin.route('/radio_episodes/')
-def all_episodes3():
+def radio_episodes():
     soup3 = mainaddon.get_soup3(URL3)
     playable_podcast3 = mainaddon.get_playable_podcast3(soup3)
     items = mainaddon.compile_playable_podcast3(playable_podcast3)
     return items
 
 @plugin.route('/interview_episodes/')
-def all_episodes4():
+def interview_episodes():
     soup4 = mainaddon.get_soup4(URL4)
     playable_podcast4 = mainaddon.get_playable_podcast4(soup4)
     items = mainaddon.compile_playable_podcast4(playable_podcast4)
     return items
 
 @plugin.route('/crazygenius_episodes/')
-def all_episodes5():
+def crazygenius_episodes():
     soup5 = mainaddon.get_soup5(URL5)
     playable_podcast5 = mainaddon.get_playable_podcast5(soup5)
     items = mainaddon.compile_playable_podcast5(playable_podcast5)
