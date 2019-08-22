@@ -1,5 +1,5 @@
 # Kodi Media Center language file
-# Addon Name: The AtlanticPodcasts
+# Addon Name: The Atlantic Podcasts
 # Addon id: plugin.audio.theatlanticpodcasts
 # Addon Provider: leopheard
 msgid ""

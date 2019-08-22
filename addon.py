@@ -3,6 +3,12 @@ from resources.lib import mainaddon
 
 plugin = Plugin()
 
+URL1 = "https://feeds.soundcloud.com/users/soundcloud:users:276623469/sounds.rss" #SPOKENEDITION
+URL2 = "https://feeds.megaphone.fm/theatlanticsdailyidea" #ATLANTICSDAILYIDEA
+URL3 = "https://feeds.megaphone.fm/radioatlantic" #RADIOATLANTIC
+URL4 = "https://feeds.megaphone.fm/theinterview" #THEATLANTICINTERVIEW
+URL5 = "https://feeds.megaphone.fm/crazygenius" #CRAZYGENIUS
+
 @plugin.route('/')
 def main_menu():
     items = [
@@ -51,7 +57,7 @@ def all_episodes3():
     return items
 
 @plugin.route('/interview_episodes/')
-def all_episodes1():
+def all_episodes4():
     soup4 = mainaddon.get_soup4(URL4)
     playable_podcast4 = mainaddon.get_playable_podcast4(soup4)
     items = mainaddon.compile_playable_podcast4(playable_podcast4)
