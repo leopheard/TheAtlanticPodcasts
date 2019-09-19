@@ -3,11 +3,11 @@ from resources.lib import mainaddon
 
 plugin = Plugin()
 
-#URL1 = "https://feeds.soundcloud.com/users/soundcloud:users:276623469/sounds.rss" #SPOKENEDITION
-#URL2 = "https://feeds.megaphone.fm/theatlanticsdailyidea" #ATLANTICSDAILYIDEA
-#URL3 = "https://feeds.megaphone.fm/radioatlantic" #RADIOATLANTIC
-#URL4 = "https://feeds.megaphone.fm/theinterview" #THEATLANTICINTERVIEW
-#URL5 = "https://feeds.megaphone.fm/crazygenius" #CRAZYGENIUS
+URL1 = "https://feeds.soundcloud.com/users/soundcloud:users:276623469/sounds.rss" #SPOKENEDITION
+URL2 = "https://feeds.megaphone.fm/theatlanticsdailyidea" #ATLANTICSDAILYIDEA
+URL3 = "https://feeds.megaphone.fm/radioatlantic" #RADIOATLANTIC
+URL4 = "https://feeds.megaphone.fm/theinterview" #THEATLANTICINTERVIEW
+URL5 = "https://feeds.megaphone.fm/crazygenius" #CRAZYGENIUS
 
 @plugin.route('/')
 def main_menu():
