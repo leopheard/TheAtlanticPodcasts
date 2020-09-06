@@ -13,7 +13,7 @@ URL5 = "https://feeds.megaphone.fm/crazygenius" #CRAZYGENIUS
 def main_menu():
     items = [
    {
-            'label': plugin.get_string(30001), 
+            'label': plugin.get_string(30001),
             'path': plugin.url_for('spoken_episodes'),
             'thumbnail': "https://i1.sndcdn.com/avatars-000323911236-xz3vii-original.jpg"},
    {
